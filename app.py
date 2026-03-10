@@ -166,13 +166,18 @@ api_choice = st.sidebar.selectbox(
 # API密钥输入
 if api_choice == "Qwen":
     api_key = st.sidebar.text_input("Qwen API密钥", type="password")
-    api_base_url = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
+    api_base_url = " `https://ark.cn-beijing.volces.com/api/v3/chat/completions` "
+    st.sidebar.markdown("[获取Qwen API密钥](https://dashscope.console.aliyun.com/apiKey)")
+
 elif api_choice == "DeepSeek":
     api_key = st.sidebar.text_input("DeepSeek API密钥", type="password")
-    api_base_url = "https://api.deepseek.com/v1/chat/completions"
+    api_base_url = " `https://api.deepseek.com/v1/chat/completions` "
+    st.sidebar.markdown("[获取DeepSeek API密钥](https://platform.deepseek.com/api_keys)")
+
 elif api_choice == "Doubao":
     api_key = st.sidebar.text_input("Doubao API密钥", type="password")
-    api_base_url = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
+    api_base_url = " `https://ark.cn-beijing.volces.com/api/v3/chat/completions` "
+    st.sidebar.markdown("[获取Doubao API密钥](https://console.volcengine.com/ark/overview)")
 
 st.sidebar.markdown("---")
 
@@ -428,4 +433,5 @@ if st.button("🚀 生成文案", use_container_width=True):
 
 # 页脚信息
 st.markdown("---")
+
 st.markdown("<p class='info-text'>💡 提示：请确保填写正确的API密钥，不同API需要对应不同的密钥</p>", unsafe_allow_html=True)
