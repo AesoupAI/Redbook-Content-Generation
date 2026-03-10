@@ -1,0 +1,23 @@
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+env.bak/
+venv.bak/
+
+# 编辑器相关
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 数据文件（如果有大型数据文件，建议添加）
+# data/
