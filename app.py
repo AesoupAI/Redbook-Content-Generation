@@ -164,6 +164,7 @@ api_choice = st.sidebar.selectbox(
 )
 
 # API密钥输入
+
 if api_choice == "Qwen":
     api_key = st.sidebar.text_input("Qwen API密钥", type="password")
     api_base_url = " `https://ark.cn-beijing.volces.com/api/v3/chat/completions` "
@@ -433,5 +434,4 @@ if st.button("🚀 生成文案", use_container_width=True):
 
 # 页脚信息
 st.markdown("---")
-
 st.markdown("<p class='info-text'>💡 提示：请确保填写正确的API密钥，不同API需要对应不同的密钥</p>", unsafe_allow_html=True)
