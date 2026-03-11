@@ -167,17 +167,17 @@ api_choice = st.sidebar.selectbox(
 
 if api_choice == "Qwen":
     api_key = st.sidebar.text_input("Qwen API密钥", type="password")
-    api_base_url = " `https://ark.cn-beijing.volces.com/api/v3/chat/completions` "
+    api_base_url = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
     st.sidebar.markdown("[获取Qwen API密钥](https://dashscope.console.aliyun.com/apiKey)")
 
 elif api_choice == "DeepSeek":
-    api_key = st.sidebar.text_input("DeepSeek API密钥", type="password")
-    api_base_url = " `https://api.deepseek.com/v1/chat/completions` "
+    api_key = st.sidebar.text_input("sk-133886a2296d4464a182432191c5b207", type="password")
+    api_base_url = "https://api.deepseek.com/v1/chat/completions"
     st.sidebar.markdown("[获取DeepSeek API密钥](https://platform.deepseek.com/api_keys)")
 
 elif api_choice == "Doubao":
     api_key = st.sidebar.text_input("Doubao API密钥", type="password")
-    api_base_url = " `https://ark.cn-beijing.volces.com/api/v3/chat/completions` "
+    api_base_url = "https://ark.cn-beijing.volces.com/api/v3/chat/completions"
     st.sidebar.markdown("[获取Doubao API密钥](https://console.volcengine.com/ark/overview)")
 
 st.sidebar.markdown("---")
